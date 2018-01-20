@@ -10,12 +10,24 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 pygame.mixer.init()
 
+while 1: #choosing volume
+	try:
+		global vol
+		vol = int(input("Choose volume between 0 and 100\n>"))*0.01
+		time.sleep(1)
+		print ("Volume set")
+		break
+	except:
+		time.sleep(0.5)
+		print ("Sorry. The input was not recognized. Try again.\n")
+
 class keys:
 
 	def __init__(self, button, led, sound):
 		self.key = button
 		self.led = led
 		self.note = pygame.mixer.Sound(sound)
+		self.note.set_volume(vol)
 		GPIO.setup(self.key, GPIO.IN, pull_up_down = GPIO.PUD_UP)
 		GPIO.setup(self.led, GPIO.OUT, initial = 0)
 
