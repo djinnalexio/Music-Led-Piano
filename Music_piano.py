@@ -7,7 +7,7 @@ import time
 import pygame
 
 GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(True)
+GPIO.setwarnings(False)
 pygame.mixer.init()
 
 class keys:
@@ -49,3 +49,4 @@ try:
 except KeyboardInterrupt:
 	print ("\nCode stopped by 'keyboard interrupt'. Have a nice day.")
 	GPIO.cleanup()
+	exit()

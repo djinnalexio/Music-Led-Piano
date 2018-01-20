@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import RPi.GPIO as pin
 pin.setmode(pin.BCM)
-pin.setwarnings(True)
+pin.setwarnings(False)
 
 import pygame
 import time
@@ -137,6 +137,8 @@ try:
     raw_input()
     pin.cleanup()
     print ("Clean Exit. Have a nice day!")
+    exit()
 except KeyboardInterrupt:
     print ("\nCode stopped by 'keyboard interrupt'. Have a nice day.")
     pin.cleanup()
+    exit()
