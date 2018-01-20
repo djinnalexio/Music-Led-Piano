@@ -131,10 +131,10 @@ pin.add_event_detect(s7, pin.FALLING, callback = event7, bouncetime = 500)
 pin.add_event_detect(s8, pin.FALLING, callback = event8, bouncetime = 500)
 
 time.sleep(1)
-print("\n!!!Piano Ready!!!\n\n\n Exit with 'Enter(Return)' or Keyboard Interrupt.")
+print("\n!!!Piano Ready!!!\n\n\n Exit with 'Enter(Return)'")
 
 try:
-    input()
+    raw_input()
     pin.cleanup()
     print ("Clean Exit. Have a nice day!")
 except KeyboardInterrupt:
