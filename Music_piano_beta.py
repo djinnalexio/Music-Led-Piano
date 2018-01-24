@@ -13,7 +13,7 @@ s1 = 20 #38
 s2 = 19 #35
 s3 = 6 #31
 s4 = 5 #29
-s5 = 23 #16
+s5 = 13 #16
 s6 = 22 #15
 s7 = 27 #13
 s8 = 17 #11
@@ -25,7 +25,7 @@ print("buttons ready\n")
 
 #SETTING UP LEDS
 left=21 #40
-right=13 #33
+right=23 #33
 white= (left, right)
 yellow=16 #36
 red=12 #32
