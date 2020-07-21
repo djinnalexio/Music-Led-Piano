@@ -1,7 +1,7 @@
-# Music-Led-Piano
+# Music Led Piano
 A simple piano made out of push buttons, leds and sound files.
 
-This project imitates the sequence DO-RE-MI-FA-SOL-LA-SI-DO of on standard piano.
+This project imitates the sequence DO-RE-MI-FA-SOL-LA-SI-DO of a standard piano.
 As the buttons are pressed, leds are also lighted up. I see this project as the prototype for some sort of toy.
 I am not an expert programmer, so the code should not be difficult to understand and maybe intuitive to some extent.
 This code should work on both Python 2 and Python 3.
